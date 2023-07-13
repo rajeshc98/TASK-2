@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rajesh-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(9, 9, 61);
+            color: aliceblue;
+            font-family: Ysabeau Infant;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(158, 74, 158);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: orangered;
+            font-size: 1.1rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(158, 74, 158);
+            height: 1px;
+            margin: 60px 80px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 50px 0;
+
+        }
+
+        .leftsection .button {
+            padding: 23px;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: rgb(44, 14, 92);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .purpole {
+            color: rgb(134, 12, 248);
+        }
+
+        .textgray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(134, 12, 248);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 78vw;
+            height: 2px;
+            margin: 50px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            position: relative;
+            top: -150px;
+            left: 30px;
+            height: 85px;
+            width: 1px;
+            background-color: white;
+            margin: 150px 0;
+        }
+
+        .image-top {
+            width: 100px;
+            position: relative;
+            top: 10px;
+            left: 19px;
+        }
+
+        .vertical-title {
+            position: relative;
+            width: 100px;
+            top: 35px;
+            left: 22;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 70px;
+            color: gray;
+            width: 200px;
+            font-size: 14px;
+        }
+
+        .thirdsection {
+            text-align: center;
+        }
+
+        .thirdsection .contactemail {
+            padding: 12px;
+            background: rgb(8, 6, 12);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .thirdsection .contactlinkedin {
+            padding: 12px;
+            background: rgb(6, 5, 7);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        footer {
+            background-color: rgb(70, 52, 70);
+
+        }
+
+        .footer {
+            display: flex;
+            margin: 10px 102px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer > div {
+
+            width: 80px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <dev class="left">Rajesh-Portfolio</dev>
+            <dev calss="right"></dev>
+            <ul>
+                <li><a href="/">About </a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Me</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="purpole">Rajesh</span>
+                <div> Am a Passionate </div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">github</button>
+                </div>
+            </div>
+            <div calss="rightsection">
+                <img src="png.png" alt="" width="80%" margine="70px">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondsection">
+            <span class="textgray"> What iam doing </span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="prj.png" alt="">
+                    <div class="vertical-title"> Hand Gusture Recognization</div>
+                    <div class="vertical-desc"> In order to have sufficient amount of dataset, a total of 3500 static
+                        sign images of 10 (Indian sign language) static signs are gathered from various impaired humans.
+                        A total of 4 layers and 16 filters were used in Convolution Neutral Network (CNN) Architecture
+                        based on Deep learning technique.
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <h1><span class="Contact">CONTACT ME ON </span></h1>
+            <br>
+            <button class="contactemail">Email</button>
+            <button class="contactlinkedin">Linkedin</button>
+
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <h3> Rajesh Developer portfolio</h3>
+                </div>
+                <div class="footer-second"></div>
+                <ul>
+                    <li>home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Services</li>
+                </ul>
+                <div class="footer-third">
+                    <ul>
+                        <li>home</li>
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li>home</li>
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-rights">
+                www.rajeshportfolio.com | All rights Reserved
+            </div>
+        </footer>
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'UI/UX Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
